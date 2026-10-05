@@ -1,0 +1,13 @@
+torch==2.8.0
+torchvision==0.23.0
+transformers==4.57.1
+vllm==0.11.0
+deepspeed==0.19.7
+accelerate==1.11.0
+llamafactory==0.9.5
+mathruler==0.1.0
+pylatexenc
+datasets
+pandas
+pyarrow
+jinja2

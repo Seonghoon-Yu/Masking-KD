@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+data/papo/
+data/images/
+data/rollouts/
+checkpoints/
+eval_outputs/
+wandb/
