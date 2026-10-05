@@ -1,4 +1,4 @@
-# Hide-to-See: Reasoning-prefix Masking for Visual-anchored Thinking in VLM Distillation
+# Hide to See: Reasoning-prefix Masking for Visual-anchored Thinking in VLM Distillation
 
 Official implementation of **Masking-KD** (NeurIPS 2026), which distills Qwen3-VL-8B-Thinking into Qwen3-VL-2B-Thinking.
 
