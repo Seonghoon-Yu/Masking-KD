@@ -1,8 +1,8 @@
 # Hide-to-See: Reasoning-prefix Masking for Visual-anchored Thinking in VLM Distillation
 
-Official implementation of **Masking-KD**, which distills Qwen3-VL-8B-Thinking into Qwen3-VL-2B-Thinking.
+Official implementation of **Masking-KD** (NeurIPS 2026), which distills Qwen3-VL-8B-Thinking into Qwen3-VL-2B-Thinking.
 
-[🤗 Model](https://huggingface.co/SeonghoonYu/Masking-KD) | [🤗 Training data](https://huggingface.co/datasets/SeonghoonYu/Masking-KD-Rollouts)
+[📄 Paper](https://arxiv.org/abs/2605.11651) | [🤗 Model](https://huggingface.co/SeonghoonYu/Masking-KD) | [🤗 Training data](https://huggingface.co/datasets/SeonghoonYu/Masking-KD-Rollouts)
 
 ## Overview
 
@@ -55,7 +55,7 @@ python evaluation/prepare_data.py   # -> data/papo/*.json, data/images/
 bash scripts/train.sh
 ```
 
-Our checkpoint was trained on 2× A100 80GB GPUs. 48GB GPUs run out of memory at the default maximum sequence length of 5000.
+Our checkpoint was trained on 2× A100 80GB GPUs.
 
 The script uses 2 GPUs by default. To change this, set `CUDA_VISIBLE_DEVICES`; gradient accumulation is adjusted to keep the global batch size at 512.
 
@@ -90,3 +90,14 @@ scripts/                 # rollout / train / eval launchers
 ## Acknowledgements
 
 This code builds on [PAPO](https://github.com/MikeWangWZHL/PAPO) and [PAPO-Eval](https://github.com/xhguo7/PAPO-Eval) (training data and evaluation benchmarks), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [EasyR1](https://github.com/hiyouga/EasyR1), and [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL).
+
+## Citation
+
+```bibtex
+@inproceedings{yu2026hide,
+  title     = {Hide to See: Reasoning-prefix Masking for Visual-anchored Thinking in VLM Distillation},
+  author    = {Yu, Seonghoon and Nam, Dongjun and Lee, Byung-Kwan and Son, Jeany},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026}
+}
+```
